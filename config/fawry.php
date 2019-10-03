@@ -24,7 +24,7 @@ return [
 
     'security_key' => env('FAWRY_SECURITY_KEY'),
 
-    'user_table' => 'users',
+    'users_table' => 'users',
 
     'user_model' => App\User::class,
 ];

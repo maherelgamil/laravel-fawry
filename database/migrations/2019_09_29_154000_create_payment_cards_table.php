@@ -13,9 +13,9 @@ class CreatePaymentCardsTable extends Migration
      */
     public function up()
     {
-        Schema::table(config('fawry.user_table'), function (Blueprint $table) {
-            $table->string('payment_card_last_four')->unique();
-            $table->string('payment_card_brand');
+        Schema::table(config('fawry.users_table'), function (Blueprint $table) {
+            $table->string('payment_card_last_four')->nullable();
+            $table->string('payment_card_brand')->nullable();
             $table->text('payment_card_fawry_token')->nullable();
         });
     }
@@ -27,10 +27,10 @@ class CreatePaymentCardsTable extends Migration
      */
     public function down()
     {
-        Schema::table(config('fawry.user_table'), function (Blueprint $table) {
-            $table->dropColumn('payment_card_last_four')->unique();
+        Schema::table(config('fawry.users_table'), function (Blueprint $table) {
+            $table->dropColumn('payment_card_last_four');
             $table->dropColumn('payment_card_brand');
-            $table->dropColumn('payment_card_fawry_token')->nullable();
+            $table->dropColumn('payment_card_fawry_token');
         });
     }
 }
