@@ -1,0 +1,27 @@
+{
+    "name": "maherelgamil/laravel-fawry",
+    "description": "Integration package for Fawry Payment Gateway",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maher El Gamil",
+            "email": "maherbusnes@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maherelgamil\\LaravelFawry\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maherelgamil\\LaravelFawry\\FawryServiceProvider"
+            ]
+        }
+    }
+}
