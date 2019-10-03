@@ -25,6 +25,10 @@ class FawryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->configure();
+
+        $this->app->bind('fawry',function(){
+            return new Fawry();
+        });
     }
 
     /**

@@ -21,7 +21,10 @@
         "laravel": {
             "providers": [
                 "Maherelgamil\\LaravelFawry\\FawryServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Fawry": "Maherelgamil\\LaravelFawry\\Facades\\FawryFacade"
+            }
         }
     }
 }
