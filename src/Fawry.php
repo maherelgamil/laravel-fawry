@@ -61,7 +61,7 @@ class Fawry
 
     public function deleteCardToken($user)
     {
-        return $this->delete(
+        $result =  $this->delete(
             $this->endpoint("cards/cardToken"), [
                 'merchantCode' => $this->merchantCode,
                 'customerProfileId' => md5($user->id),
@@ -74,6 +74,16 @@ class Fawry
                 )
             ]
         );
+
+        if($result->statusCode == 200) {
+            $user->update([
+                'payment_card_last_four' => null,
+                'payment_card_brand' => null,
+                'payment_card_fawry_token' => null,
+            ]);
+        }
+
+        return $result;
     }
 
     public function chargeViaCard($merchantRefNum, $user, $amount, $chargeItems = [], $description = null )

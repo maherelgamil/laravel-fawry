@@ -27,4 +27,5 @@ return [
     'users_table' => 'users',
 
     'user_model' => App\User::class,
+
 ];
