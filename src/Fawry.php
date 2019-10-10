@@ -176,7 +176,7 @@ class Fawry
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST,  "GET");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        return curl_exec($ch);
+        return json_decode(curl_exec($ch));
     }
 
     public function post($url, $data)
@@ -190,7 +190,7 @@ class Fawry
                 'Content-Length: ' . strlen(json_encode($data)))
         );
 
-        return curl_exec($ch);
+        return json_decode(curl_exec($ch));
     }
 
     public function delete($url, $data)
@@ -205,6 +205,6 @@ class Fawry
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST,  "DELETE");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        return curl_exec($ch);
+        return json_decode(curl_exec($ch));
     }
 }
