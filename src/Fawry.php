@@ -38,9 +38,10 @@ class Fawry
         );
 
         if($result->statusCode == 200) {
+
             $user->update([
                 'payment_card_last_four' => $result->card->lastFourDigits,
-                'payment_card_brand' => $result->card->brand,
+                'payment_card_brand' => str_replace(' ', '', $result->card->brand),
                 'payment_card_fawry_token' => $result->card->token,
             ]);
         }
