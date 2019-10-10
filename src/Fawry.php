@@ -108,7 +108,7 @@ class Fawry
                     $merchantRefNum.
                     md5($user->id) .
                     'CARD' .
-                    number_format((float) $amount, 2).
+                    (float) $amount.
                     $user->payment_card_fawry_token .
                     $this->securityKey
                 )
@@ -138,7 +138,7 @@ class Fawry
                         $merchantRefNum.
                         md5($user->id) .
                         'PAYATFAWRY' .
-                        number_format((float) $amount, 2) .
+                        (float) $amount .
                         $this->securityKey
                     )
                 ]
