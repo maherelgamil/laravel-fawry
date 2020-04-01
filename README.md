@@ -7,7 +7,7 @@ Laravel Fawry
 [![License](https://poser.pugx.org/maherelgamil/laravel-fawry/license)](https://packagist.org/packages/maherelgamil/laravel-fawry)
 [![StyleCI](https://styleci.io/repos/61923982/shield)](https://styleci.io/repos/61923982)
 
-[AtFawry](https://www.atfawry.com/) interface for laravel
+Laravel interface for [AtFawry](https://www.atfawry.com/)
 
 # Table Of Contect
 - [Istallation](#installation)
