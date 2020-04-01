@@ -10,15 +10,15 @@ Laravel Fawry
 [AtFawry](https://www.atfawry.com/) interface for laravel
 
 # Table Of Contect
-- [Istallation](installation)
-- [Usage](usage)
-  - [Create Card Token](create-card-token)
-  - [Get List Of Customer Tokens](get-list-of-customer-tokens)
-  - [Delete Customer Token](delete-customer-token)
-  - [Charge](charge)
-    - [Charge Via Card](charge-via-card)
-    - [Charge Via Fawry](charge-via-fawry)
-  - [Refund](refund)
+- [Istallation](#installation)
+- [Usage](#usage)
+  - [Create Card Token](#create-card-token)
+  - [Get List Of Customer Tokens](#get-list-of-customer-tokens)
+  - [Delete Customer Token](#delete-customer-token)
+  - [Charge](#charge)
+    - [Charge Via Card](#charge-via-card)
+    - [Charge Via Fawry](#charge-via-fawry)
+  - [Refund](#refund)
 
 # Installation
 
