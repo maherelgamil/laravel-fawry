@@ -1,6 +1,14 @@
 Laravel Fawry
 ==============
 
+[![Latest Stable Version](https://poser.pugx.org/maherelgamil/laravel-fawry/version)](https://packagist.org/packages/maherelgamil/laravel-fawry)
+[![Total Downloads](https://poser.pugx.org/maherelgamil/laravel-fawry/downloads)](https://packagist.org/packages/v/laravel-fawry)
+[![Latest Unstable Version](https://poser.pugx.org/maherelgamil/laravel-fawry/v/unstable)](//packagist.org/packages/maherelgamil/laravel-fawry)
+[![License](https://poser.pugx.org/maherelgamil/laravel-fawry/license)](https://packagist.org/packages/maherelgamil/laravel-fawry)
+[![StyleCI](https://styleci.io/repos/61923982/shield)](https://styleci.io/repos/61923982)
+
+[AtFawry](https://www.atfawry.com/) interface for laravel
+
 # Installation
 
 Install via composer  
