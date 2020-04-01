@@ -93,4 +93,9 @@ Fawry::chargeViaFawry($merchantRefNum, $user, $paymentExpiry, $amount, $chargeIt
 Fawry::refund($fawryRefNumber, $refundAmount, $reason = null)
 ```
 
+## License
+
+Laravel Fawry is an open-sourced laravel package licensed under the [MIT](License.md) license
+
+
 Enjoy!
